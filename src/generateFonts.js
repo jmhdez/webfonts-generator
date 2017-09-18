@@ -122,7 +122,7 @@ var generateFonts = function(options) {
 	}
 
 	// Create all needed generate and write tasks.
-	for (var i in options.types) {
+	for (var i = 0; i < options.types.length; i++) {
 		var type = options.types[i]
 		makeGenTask(type)
 	}
